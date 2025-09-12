@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylesheet2</title>
+</head>
+<style>
+    .div_box{
+        border: 1px solid darkgray; 
+        background-color: rgb(99, 99, 99); 
+        color: white;
+        font-weight: bolder;
+        text-align: center;
+        width: 170px; 
+        height: 25px;
+        line-height: 25px;
+        padding: 2px;
+        display: inline-block;
+    }
+    .div_box.normal{
+        background-color: rgb(99, 99, 99);
+    }
+    .div_box.active{
+        background-color: #04AA6D;
+        color: white;
+    }
+    .div_box.normal:hover{
+        background-color: rgb(28, 28, 28);
+        cursor: pointer;
+    }
+</style>
+<style>
+    a:link,
+    a:visited {
+        color: black;
+        text-decoration: underline;
+    }
+    a:hover {
+        color: rgb(149, 214, 52);
+    }
+</style>
+<body>
+    <!--Welcome-->
+    <div>
+        <h1 style="color: #4CAF50; font-size: 2em; font-weight: bolder; margin-top: 30px; margin-left: 15px;">Welcome to 박현수's Homepage (22200338)</h1>
+        <p style="font-weight: 600; font-size: large; margin-left: 15px;">Use the menu to select different Stylesheets</p>
+    </div>
+    <!--box-->
+    <div style="margin-top: 40px; margin-left: 20px">
+        <div class=".div_box">
+            <div class="div_box normal">Stylesheet 1</div>
+            <div class="div_box active">Stylesheet 2</div>
+            <div class="div_box normal">Stylesheet 3</div>
+            <div class="div_box normal">Stylesheet 4</div>
+            <div class="div_box normal">No Stylesheet</div>
+        </div>
+    </div>
+    <!--Same-->
+    <div>
+        <h1 style="color: #4CAF50; font-size: 2em; font-weight: bolder; margin-top: 30px; margin-left: 15px;">Same Page Different Stylesheets</h1>
+        <p style="font-weight: 600; font-size: large; margin-left: 15px;">This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:</p>
+        <div style="margin-left: 15px; font-size: large;">
+            <a href="./style1.html">Stylesheet1</a>,
+            <a href="./style2.html">Stylesheet2</a>,
+            <a href="https://www.w3schools.com/css/demo_default.htm">Stylesheet3</a>,
+            <a href="https://www.w3schools.com/css/demo_default.htm">Stylesheet4</a>.
+        </div>
+    </div>
+    <!--No-->
+    <div>
+        <h2 style="color: #4CAF50; font-weight: bolder; margin-top: 30px; margin-left: 15px;">No Styles</h2>
+        <p style="font-weight: 600; font-size: large; margin-left: 15px;">This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:</p>
+        <div style="margin-left: 15px; font-size: large;">
+            <a href="./index.html">No Stylesheet.</a>
+        </div>
+    </div>
+    <!--Side-->
+    <div style="margin: 15px; border: 1px solid rgb(209, 209, 209); background-color: rgb(235, 235, 235);">
+        <h3 style="color: #4CAF50; font-weight: bolder; margin-top: 15px; margin-left: 15px;">Side-Bar </h3>
+        <p style="font-weight: 600; font-size: large; margin-left: 15px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    </div>
+    <div style="margin: 15px; font-size: smaller; text-align: center;">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+    </div>
+</body>
+</html>

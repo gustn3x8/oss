@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylesheet1</title>
+</head>
+<style>
+    .div_Mleft{
+        font: 100% Lucida Sans, Verdana;
+        width: 180px; 
+        border: 1px solid #d4d4d4;
+        border-radius: 4px;
+        padding: 5px; 
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+    .div_Mleft.normal{
+        background-color: #ededed;
+    }
+    .div_Mleft.active{
+        background-color: #04AA6D;
+        font-weight: bolder;
+        color: white;
+    }
+    .div_Mleft.normal:hover{
+        background-color: white;
+        cursor: pointer;
+    }
+</style>
+<style>
+    a:link,
+    a:visited {
+        color: black;
+        text-decoration: underline;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+    a:active {
+        color: black;
+    }
+</style>
+<body>
+    <!--Top-->
+    <div style="background-color: #04AA6D; color: white; font: 100% Lucida Sans, Verdana; padding: 15px; margin: 20px; margin-bottom: 5px; border-radius: 4px;">
+        <h1 style="font-weight: bolder; margin: 0;">Welcome to 박현수's Homepage (22200338)</h1>
+        Use the menu to select different Stylesheets
+    </div>
+
+    <!--Mid-->
+    <div style="display: flex; margin-top: 1px;">
+        <!--Mid.Left-->
+        <div style="flex: 1">
+            <div class="div_Mleft active">Stylesheet 1</div>
+            <div class="div_Mleft normal">Stylesheet 2</div>
+            <div class="div_Mleft normal">Stylesheet 3</div>
+            <div class="div_Mleft normal">Stylesheet 4</div>
+            <div class="div_Mleft normal">No Stylesheet</div>
+        </div>
+        <!--Mid.mid-->
+        <div style="flex: 3; padding-top: 5px; font: 100% Lucida Sans, Verdana">
+            <h1 style="font-weight: bolder;">Same Page Different Stylesheets</h1>
+            <p style="font-size: large;">This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:</p>
+            <div>
+                <a href="./style1.html">Stylesheet1</a>,
+                <a href="./style2.html">Stylesheet2</a>,
+                <a href="https://www.w3schools.com/css/demo_default.htm">Stylesheet3</a>,
+                <a href="https://www.w3schools.com/css/demo_default.htm">Stylesheet4</a>.
+            </div>
+            <h2 style="font-weight: bolder;">No Styles</h2>
+            <p style="font-size: large;">This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:</p>
+            <a href="./index.html">No Stylesheet</a>.
+        </div>
+        <!--Mid.right-->
+        <div style="flex: 1;"></div>
+        <div style="background-color: #32a4e7; color: #ffffff; padding: 10px; margin-right: 20px; margin-top: 2px; 
+        width: 180px; border-radius: 4px; font: 100% Lucida Sans, Verdana">
+        <h2>Side-Bar</h2>
+        <p style="line-height: 1.5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </div>
+    </div>
+
+    <!--Bot-->
+    <div style="border: 1px solid #d4d4d4; border-radius: 4px; background-color: #e9e9e9; margin: 20px; padding: 10px; font-size: small; text-align: center;">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. 
+    </div>
+    
+</body>
+</html>
