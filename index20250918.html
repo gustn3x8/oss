@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20250918</title>
+</head>
+<body>
+
+<!--
+    <script>
+        //alert("안녕하세요!");
+
+        let sum = 0;
+        for(let i=0 ; i<=100 ; i++){
+            sum += i;
+        }
+        //alert("0부터 100까지 더하면.. : " + sum + "입니다!");
+
+        var aaa = 0;    //중복선언 가능, 값 변경 가능
+        let bbb = 0;    //중복선언 불가능, 값 변경 가능
+        const ccc = 0;  //중복선언 불가능, 값 변경 불가능
+
+        console.log("javascript는 java와는 완전히 다른 언어입니다.");
+
+        //setTimeout(function(){alert(112233);}, 1000);   //setInterval() = 반복
+
+        //let confirm_result = confirm("정말로 삭제하시겠습니까?");
+        //alert(confirm_result);
+
+        let width1 = window.innerWidth;
+        let width2 = window.outerWidth;
+        //alert(width1 + " || " + width2);
+        let height1 = window.innerHeight;
+        //alert(height1);
+
+        //window.location.href = "https://www.daum.net";
+        //location.replace("https://www.daum.net");   //기록을 지움
+
+        let obj = {
+            phone : "010-9956-1075",
+            stdnum : "22200338",
+            morningrun : function(){    //함수 호출도 가능
+                alert("저는 새벽에 달리겠습니다."); 
+            }
+        };
+        obj.name = "객체 이름이야.";
+        console.log(obj.name);
+        console.log(obj.phone);
+        console.log(obj.stdnum);
+        obj.morningrun();
+    </script>
+-->
+    <h4>덧셈 계산기</h4>
+
+    <form>
+        <input type="number" size="2" name="num1" id="num1" pattern="\d*">
+        +
+        <input type="number" size="2" name="num2" id="num2" pattern="\d*">
+        <button onclick="add()" type="button"> = </button>
+        <input type="number" size="2" name="result" id="result" readonly>
+        <br><br>
+        <input type="reset" value="초기화"> 
+    </form>
+
+    <!--event-->
+    <div id="div_test"
+    onclick="listenr_onclick()"
+
+    style="height: 200px; background-color: aquamarine;">안녕하세요!</div>
+    <script>
+        function listenr_onclick(){
+            alert("you clicked!");
+            let div_test = document.getElementById("div_test");
+            div_test.style = "background-color: yellow";
+            div_test.innerHTML = '<img src="https://media.istockphoto.com/id/1317323736/ko/%EC%82%AC%EC%A7%84/%EB%82%98%EB%AC%B4-%EB%B0%A9%ED%96%A5%EC%9C%BC%EB%A1%9C-%ED%95%98%EB%8A%98%EB%A1%9C-%EB%B0%94%EB%9D%BC%EB%B3%B4%EB%8A%94-%EA%B2%BD%EC%B9%98.jpg?s=612x612&w=0&k=20&c=0xTghmMTXJ5ITCZ-LKTABbaPIK_1kWNf0FSFl_GL_7I=">'
+        }
+    </script>
+
+    <script>
+        function add(){
+            var num1 = document.getElementById("num1");
+            var num2 = document.getElementById("num2");
+            var sum = parseInt(num1.value) + parseInt(num2.value);
+            var result = document.getElementById("result");
+            result.value = sum;
+        }
+
+        let type1 = "abc";
+        alert("type1: " + type1);
+        alert(`type1: ${type1}`);
+    </script>
+    
+</body>
+</html>
